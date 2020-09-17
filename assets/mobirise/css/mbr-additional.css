@@ -1447,7 +1447,7 @@ section.lazy-placeholder:after {
   padding: 15px;
   border-radius: 50%;
   color: #ffffff;
-  background: #4e869e;
+  background: #ec6963;
   opacity: .9;
 }
 .cid-s9TFbsS0b7 .carousel-controls a:hover span {
@@ -1459,7 +1459,7 @@ section.lazy-placeholder:after {
   margin-bottom: 1.6rem;
   overflow: hidden;
   border-radius: 50%;
-  background: #ec6963;
+  background: #4e869e;
   margin: 0 auto 2rem auto;
   display: flex;
   -webkit-box-shadow: 0 7px 20px 5px rgba(0, 0, 0, 0.08);
@@ -1818,14 +1818,14 @@ section.lazy-placeholder:after {
   height: 3em;
   line-height: 3em;
   border-radius: 50%;
-  background-color: #000000;
+  background-color: #ec6963;
   width: 3em;
   -webkit-transition: all 0.3s ease-out 0s;
   transition: all 0.3s ease-out 0s;
   font-size: 13px;
 }
 .cid-s7howyppcU .icon-transition span:hover {
-  background-color: #66458e;
+  background-color: #4e869e;
 }
 .cid-s7howyppcU .mbr-text {
   color: #000000;
