@@ -59,7 +59,7 @@
         "url": "https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i"
       }
     ],
-    "uniqCompNum": 76,
+    "uniqCompNum": 77,
     "versionPublish": "4.12.3",
     "screenshot": "screenshot.png",
     "favicon": "@PROJECT_PATH@/assets/images/image-13-removebg-preview.png",
@@ -649,47 +649,31 @@
               "padding": "0 3rem"
             },
             ".image-block": {
-              "position": "relative",
               "margin": "auto",
-              "& when (@fullWidth)": {
-                "width": "100% !important"
-              },
               "img": {
                 "width": "100%"
               },
-              ".img-caption": {
-                "width": "100%",
-                "padding": "1rem 1rem",
-                "position": "absolute",
-                "left": "0",
-                "p": {
-                  "margin-bottom": "0"
-                },
-                "& when (@captionBottom)": {
-                  "bottom": "0"
-                },
-                "& when not (@captionBottom)": {
-                  "top": "0"
-                }
+              "& when (@fullWidth)": {
+                "width": "100% !important"
               }
-            },
-            ".mbr-text": {
-              "position": "relative"
             },
             "@media (max-width: 767px)": {
               ".container-fluid": {
                 "padding": "0 1rem"
+              },
+              ".image-block": {
+                "width": "100% !important"
               }
             }
           },
-          "_name": "image1",
-          "_customHTML": "<section group=\"Images & Videos\" class=\"image1\">\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n    <mbr-parameters>\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"3\" condition=\"fullWidth == false\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"0\" condition=\"fullWidth == false\">\n        <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n        <input type=\"range\" inline title=\"Width\" name=\"contentWidth\" min=\"20\" max=\"100\" value=\"50\" step=\"1\" condition=\"fullWidth==false\">\n        <input type=\"checkbox\" title=\"Show Caption\" name=\"showCaption\">\n        <input type=\"color\" title=\"Caption Background\" name=\"cpBg\" value=\"#66458e\" condition=\"showCaption\">\n        <input type=\"range\" inline title=\"Caption Opacity\" name=\"captionOpacity\" min=\"0\" max=\"1\" value=\"0.4\" step=\"0.1\">\n        <input type=\"checkbox\" title=\"Caption On Top/Bottom\" name=\"captionBottom\" checked condition=\"showCaption\">\n        <input type=\"color\" title=\"Background Color\" name=\"bgColor\" value=\"#ffffff\" condition=\"!fullWidth\">\n    </mbr-parameters>\n    <!-- End block parameters -->\n    <figure class=\"mbr-figure\" mbr-class=\"{'container-fluid':fullWidth == false}\">\n        <div class=\"image-block\" mbr-style=\"{'width':contentWidth+'%'}\">\n            <img src=\"@PROJECT_PATH@/assets/images/frame-21.png\" alt title>\n            <div class=\"img-caption\" mbr-if=\"showCaption\">\n                <div class=\"mbr-overlay\" mbr-style=\"{'opacity':captionOpacity, 'background-color': cpBg}\">\n                </div>\n                <p class=\"mbr-text mbr-fonts-style align-left mbr-white\" mbr-theme-style=\"display-2\">\n                    Our NEW Headphones\n                </p>\n            </div>\n        </div>\n    </figure>\n</section>",
-          "_cid": "sc60KYchSO",
-          "_anchor": "image1-1w",
+          "_name": "image2",
+          "_customHTML": "<section group=\"Images & Videos\" class=\"image2\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" value=\"2\" step=\"1\" condition=\"fullWidth == false\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" value=\"0\" step=\"1\" condition=\"fullWidth == false\">\n\n        <input type=\"range\" inline title=\"Width\" name=\"imageSize\" min=\"20\" max=\"100\" value=\"65\" step=\"1\" condition=\"fullWidth == false\">\n\n        <input type=\"color\" title=\"Background Color\" name=\"bgColor\" value=\"#ffffff\" condition=\"fullWidth == false\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n\n    <figure class=\"mbr-figure\" mbr-class=\"{'container-fluid':!fullWidth}\">\n        <div class=\"image-block\" mbr-style=\"{'width':imageSize+'%'}\">\n            <img src=\"@PROJECT_PATH@/assets/images/frame-21.png\" alt title>\n        </div>\n    </figure>\n</section>",
+          "_cid": "sc6bvID81h",
           "_protectedParams": [],
           "_global": false,
           "_once": false,
-          "_params": {}
+          "_params": {},
+          "_anchor": "image2-24"
         },
         {
           "_styles": {
